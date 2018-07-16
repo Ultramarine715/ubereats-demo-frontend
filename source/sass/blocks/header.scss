@@ -1,0 +1,56 @@
+.header {
+  &__wrap {
+    outline: 1px solid lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+  }
+  &__logo,
+  &__destination,
+  &__login {
+    outline: 1px solid green;
+  }
+  &__input,
+  &__btn {
+    line-height: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    padding: 7px 11px;
+  }
+  &__destination {
+    display: none;
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__input--time {
+    max-width: 41px;
+  }
+  &__input--location {
+    min-width: 215px;
+  }
+  &__span {
+    margin: 0 4px;
+    color: #626262;
+  }
+  &__login {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+  }
+  &__btn {
+    min-width: 80px;
+    margin-right: 10px;
+    @include tablet {
+      margin-right: 14px;
+    }
+  }
+  .header__btn--register {
+    background-color: #262626;
+    color: #fff;
+    border-color: #262626;
+  }
+}

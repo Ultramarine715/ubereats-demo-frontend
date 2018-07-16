@@ -17,3 +17,16 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
+
+.container {
+  width: 100%;
+  @include desktop {
+    width: 956px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

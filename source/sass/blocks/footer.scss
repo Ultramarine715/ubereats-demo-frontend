@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid lightblue;
+  background-color: #262626;
+  min-height: 50px;
+  color: #fff;
+  line-height: 16px;
+  &__logo,
+  &__info,
+  &__app,
+  &__copyright {
+    // outline: 1px solid green;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .4)
+  }
+  &__logo {
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    padding: 39px 0 25px;
+  }
+  &__list-item {
+    padding-bottom: 23px;
+  }
+  &__language {
+    width: 227px;
+    margin-bottom: 33px;
+  }
+  &__language-select {
+    height: 40px;
+    background-color: #3B3B3B;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 15px;
+  }
+  &__hashtag {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__social-icons {
+    margin-top: 20px;
+  }
+  &__social-icons-item {
+    padding-right: 18px;
+  }
+  &__app {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btn {
+    margin: 0 20px;
+    width: 120px;
+    height: 40px;
+    background-image: url(../../img/AppStore.png);
+  }
+  &__copyright {
+    padding: 40px 0;
+    border: none;
+  }
+}

@@ -10,39 +10,115 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col col-xs-12 col-md-6 col-lg-4">
-          <span>1</span>
-          <!-- <img src="http://via.placeholder.com/350x150" /> -->
-        </div>
-        <div class="col col-xs-12 col-md-6 col-lg-4">
-          <span>1</span>
-        </div>
-        <div class="col col-xs-12 col-md-6 col-lg-4">
-          <span>3</span>
-        </div>
+  <header class="container header">
+    <div class="header__wrap">
+      <div class="header__logo">
+        <img src="http://via.placeholder.com/121x13">
       </div>
-      <div class="logo"></div>
-      <div class="when"></div>
-      <div class="where"></div>
-      <div class="login"></div>
+      <div class="header__destination">
+        <input class="header__input header__input--time" type="text" placeholder="ASAP">
+        <span class="header__span">to</span>
+        <input class="header__input header__input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
+      </div>
+      <div class="header__login">
+        <button class="header__btn header__btn--sign-in">Sign in</button>
+        <button class="header__btn header__btn--register">Register</button>
+        <img src="http://via.placeholder.com/19x22">
+      </div>
     </div>
   </header>
-  <main>
-    <div class="container">
-      <div class="search"></div>
-      <div class="when"></div>
-      <div class="where"></div>
+  <main class="container">
+    <div class="search"></div>
+    <div class="main__destination">
+      <input class="header__input header__input--time" type="text" placeholder="ASAP">
+      <span class="header__span">to</span>
+      <input class="header__input header__input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
     </div>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
-      Hello
+      <div class="footer__logo">
+        <img src="http://via.placeholder.com/192x20">
+      </div>
+      <div class="footer__info">
+        <div class="row">
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <div class="footer__language">
+              <select class="footer__language-select">
+                <option>English</option>
+                <option>Русский</option>
+              </select>
+            </div>
+            <div class="footer__social">
+              <span class="footer__hashtag">#UberEats</span>
+              <div class="footer__social-icons">
+                <a class="footer__social-icons-item">
+                  <svg>
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                  <!-- <img src="http://via.placeholder.com/18x18"> -->
+                </a>
+                <a class="footer__social-icons-item">
+                  <img src="http://via.placeholder.com/18x15">
+                </a>
+                <a class="footer__social-icons-item">
+                  <img src="http://via.placeholder.com/18x18">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#">About UberEats</a>
+              </li>
+              <li class="footer__list-item">
+                <a>Become a Delivery Partner</a>
+              </li>
+              <li class="footer__list-item">
+                <a>Become a Restaurant Partner</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a>See all cities</a>
+              </li>
+              <li class="footer__list-item">
+                <a>Pricing</a>
+              </li>
+              <li class="footer__list-item">
+                <a>Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a>FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__app">
+        <button class="footer__btn footer__btn--ios"></button>
+        <button class="footer__btn footer__btn--android"></button>
+      </div>
+      <div class="footer__copyright">
+        <div class="row">
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <span>Uber Technologies Inc.</span>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <span>Privacy</span>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <span>Terms</span>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </footer>
-  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+  <script type="text/javascript" src="js/inject-sprite.js"></script>
 </body>
 
 </html>
