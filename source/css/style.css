@@ -268,7 +268,12 @@ ul {
   .footer__info {
     padding: 39px 0 25px; }
   .footer__list-item {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
     padding-bottom: 23px; }
+    .footer__list-item:hover {
+      text-decoration: underline; }
   .footer__language {
     width: 227px;
     margin-bottom: 33px; }

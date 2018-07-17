@@ -24,7 +24,13 @@
     padding: 39px 0 25px;
   }
   &__list-item {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
     padding-bottom: 23px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__language {
     width: 227px;
