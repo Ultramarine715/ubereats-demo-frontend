@@ -31,29 +31,57 @@
     &:hover {
       text-decoration: underline;
     }
+    &--span {
+      cursor: default;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   &__language {
-    width: 227px;
+    background-color: #3B3B3B;
+    width: 173px;
+    height: 40px;
+    overflow: hidden;
     margin-bottom: 33px;
+    @include tablet {
+      width: 176px;
+    }
+    @include desktop {
+      width: 227px;
+    }
   }
   &__language-select {
+    appearance: none;
+    width: 203px;
     height: 40px;
-    background-color: #3B3B3B;
+    padding: 0 20px 0 40px;
+    background-color: transparent;
+    background: url(../../img/world.svg) no-repeat 16px 11px, url(../../img/select-arrow.svg) no-repeat 84% 16px;
     border: none;
-    border-radius: 0;
     text-transform: uppercase;
     color: #fff;
     line-height: 15px;
+    @include tablet {
+      width: 206px;
+    }
+    @include desktop {
+      width: 257px;
+    }
   }
   &__hashtag {
     font-size: 16px;
     line-height: 19px;
+    &--green {
+      color: #49A144;
+    }
   }
   &__social-icons {
-    margin-top: 20px;
+    margin: 20px 0 30px;
   }
   &__social-icons-item {
-    padding-right: 18px;
+    font-size: 0;
+    padding-right: 12px;
   }
   &__app {
     min-height: 120px;
@@ -62,13 +90,61 @@
     align-items: center;
   }
   &__btn {
+    border: none;
     margin: 0 20px;
-    width: 120px;
     height: 40px;
-    background-image: url(../../img/AppStore.png);
+    cursor: pointer;
+    &--ios {
+      width: 120px;
+      background: url(../../img/download-ios.png) no-repeat 0 0;
+      background-size: cover;
+    }
+    &--android {
+      width: 136px;
+      background: url(../../img/download-andr.png) no-repeat 0 0;
+      background-size: cover;
+    }
   }
   &__copyright {
     padding: 40px 0;
     border: none;
+  }
+}
+
+.icon-instagram,
+.icon-facebook,
+.icon-twitter {
+  width: 24px;
+  height: 24px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+  background-color: #59BD5A;
+}
+
+.icon-arrow {
+  position: absolute;
+  top: 27px;
+  right: 32px;
+  width: 16px;
+  height: 26px;
+}
+
+.white-logo {
+  width: 192px;
+  height: 20px;
+}
+
+.main-logo {
+  width: 107px;
+  height: 11px;
+  @include desktop {
+    width: 121px;
+    height: 13px;
   }
 }

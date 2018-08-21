@@ -1,3 +1,44 @@
+.search {
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(117, 117, 117, .3);
+    padding: 16px 16px 16px 30px;
+  }
+  &::before {
+    position: absolute;
+    top: 15px;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url(../../img/search.svg) no-repeat;
+  }
+}
+
 .main__destination {
-  display: none;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-input {
+  background-color: transparent;
+}
+
+.main-content__header {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 34px;
 }

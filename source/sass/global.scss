@@ -1,32 +1,22 @@
 @font-face {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 body {
   min-width: 320px;
-  font-family: Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-}
-
-.container {
-  width: 100%;
-  @include desktop {
-    width: 956px;
-  }
+  color: #1D1D1D;
+  background-color: #fff;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+button {
+  cursor: pointer;
 }

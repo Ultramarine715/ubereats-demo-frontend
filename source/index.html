@@ -5,40 +5,160 @@
   <meta charset="utf-8">
   <title>Uber Eats – Stores</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <header class="container header">
-    <div class="header__wrap">
-      <div class="header__logo">
-        <img src="http://via.placeholder.com/121x13">
-      </div>
+  <header class="header">
+    <div class="container header__wrap">
+      <!-- <div class="header__logo"> -->
+      <svg class="main-logo">
+        <use xlink:href="#logo"></use>
+      </svg>
+      <!-- </div> -->
       <div class="header__destination">
-        <input class="header__input header__input--time" type="text" placeholder="ASAP">
-        <span class="header__span">to</span>
-        <input class="header__input header__input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
+        <input class="main-input main-input--time" type="text" placeholder="ASAP">
+        <span class="main-input__span">to</span>
+        <input class="main-input main-input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
       </div>
       <div class="header__login">
         <button class="header__btn header__btn--sign-in">Sign in</button>
         <button class="header__btn header__btn--register">Register</button>
-        <img src="http://via.placeholder.com/19x22">
+        <svg class="icon-basket">
+          <use xlink:href="#basket"></use>
+        </svg>
       </div>
     </div>
   </header>
-  <main class="container">
-    <div class="search"></div>
-    <div class="main__destination">
-      <input class="header__input header__input--time" type="text" placeholder="ASAP">
-      <span class="header__span">to</span>
-      <input class="header__input header__input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
+  <main class="main">
+    <div class="container">
+      <div class="search">
+        <input class="search__input" type="text" name="search" placeholder="Search for restaurant or cuisine">
+      </div>
+      <div class="main__destination">
+        <input class="main-input main-input--time" type="text" placeholder="ASAP">
+        <span class="main-input__span">to</span>
+        <input class="main-input main-input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
+      </div>
+      <section class="main-content">
+        <span class="main-content__header">Moscow Restaurants</span>
+        <div class="row">
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/1-desk.jpg 1x, img/1-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/1-tab.jpg 1x, img/1-tab@2x.jpg 2x">
+                <img src="img/1-mob.jpg" srcset="img/1-mob@2x.jpg 2x" alt="McDonalds">
+              </picture>
+              <span class="store__name">Макдоналдс – Газетный</span>
+              <span class="store__description">₽₽ &#8226; Бургеры</span>
+              <span class="store__delivery-time">25 - 35 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/2-desk.jpg 1x, img/2-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/2-tab.jpg 1x, img/2-tab@2x.jpg 2x">
+                <img src="img/2-mob.jpg" srcset="img/2-mob@2x.jpg 2x" alt="DimSum & Co">
+              </picture>
+              <span class="store__name">DimSum & Co – ЦДМ</span>
+              <span class="store__description">₽₽ &#8226; Японская &#8226; Китайская &#8226; Азиатская</span>
+              <span class="store__delivery-time">40 - 50 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/3-desk.jpg 1x, img/3-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/3-tab.jpg 1x, img/3-tab@2x.jpg 2x">
+                <img src="img/3-mob.jpg" srcset="img/3-mob@2x.jpg 2x" alt="ДвижОК">
+              </picture>
+              <span class="store__name">ДвижОК – Манежная</span>
+              <span class="store__description">₽ &#8226; Американская &#8226; Европейская</span>
+              <span class="store__delivery-time">35 - 45 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/4-desk.jpg 1x, img/4-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/4-tab.jpg 1x, img/4-tab@2x.jpg 2x">
+                <img src="img/4-mob.jpg" srcset="img/4-mob@2x.jpg 2x" alt="НЯ">
+              </picture>
+              <span class="store__name">НЯ – NHA</span>
+              <span class="store__description">₽₽ &#8226; Вьетнамская</span>
+              <span class="store__delivery-time">30 - 40 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/5-desk.jpg 1x, img/5-desk@2x.jpg 2x">
+                <img src="img/5-tab.jpg" srcset="img/5-tab@2x.jpg 2x" alt="Точка Дзы">
+              </picture>
+              <span class="store__name">Точка Дзы – Цветной</span>
+              <span class="store__description">₽₽ &#8226; Вьетнамская</span>
+              <span class="store__delivery-time">40 - 50 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/6-desk.jpg 1x, img/6-desk@2x.jpg 2x">
+                <img src="img/6-tab.jpg" srcset="img/6-tab@2x.jpg 2x" alt="Cinnabon">
+              </picture>
+              <span class="store__name">Cinnabon</span>
+              <span class="store__description">₽ &#8226; Выпечка &#8226; Десерты &#8226; Капкейки</span>
+              <span class="store__delivery-time">25 - 35 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/7-desk.jpg 1x, img/7-desk@2x.jpg 2x">
+                <img src="img/7-tab.jpg" srcset="img/7-tab@2x.jpg 2x" alt="PIZZELOVE">
+              </picture>
+              <span class="store__name">PIZZELOVE</span>
+              <span class="store__description">₽₽ &#8226; Пицца</span>
+              <span class="store__delivery-time">15 - 25 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/8-desk.jpg 1x, img/8-desk@2x.jpg 2x">
+                <img src="img/8-tab.jpg" srcset="img/8-tab@2x.jpg 2x" alt="Zю кафе">
+              </picture>
+              <span class="store__name">Zю кафе – Тверская</span>
+              <span class="store__description">₽₽ &#8226; Японская</span>
+              <span class="store__delivery-time">25 - 35 Min</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div class="store">
+              <picture class="store__image">
+                <source media="(min-width: 1124px)" srcset="img/9-desk.jpg 1x, img/9-desk@2x.jpg 2x">
+                <img src="img/9-tab.jpg" srcset="img/9-tab@2x.jpg 2x" alt="Zю кафе">
+              </picture>
+              <span class="store__name">Bar BQ Cafe – Манежная</span>
+              <span class="store__description">₽₽₽ &#8226; Европейская</span>
+              <span class="store__delivery-time">30 - 40 Min</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="http://via.placeholder.com/192x20">
+        <svg class="white-logo">
+          <use xlink:href="#white-logo"></use>
+        </svg>
       </div>
       <div class="footer__info">
         <div class="row">
@@ -50,19 +170,22 @@
               </select>
             </div>
             <div class="footer__social">
-              <span class="footer__hashtag">#UberEats</span>
+              <span class="footer__hashtag footer__hashtag--green">#</span><span class="footer__hashtag">UberEats</span>
               <div class="footer__social-icons">
                 <a href="#" class="footer__social-icons-item">
-                  <svg>
+                  <svg class="icon-facebook">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social-icons-item">
+                  <svg class="icon-twitter">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social-icons-item">
+                  <svg class="icon-instagram">
                     <use xlink:href="#instagram"></use>
                   </svg>
-                  <!-- <img src="http://via.placeholder.com/18x18"> -->
-                </a>
-                <a href="#" class="footer__social-icons-item">
-                  <img src="http://via.placeholder.com/18x15">
-                </a>
-                <a href="#" class="footer__social-icons-item">
-                  <img src="http://via.placeholder.com/18x18">
                 </a>
               </div>
             </div>
@@ -105,7 +228,7 @@
       <div class="footer__copyright">
         <div class="row">
           <div class="col col-xs-12 col-md-4 col-lg-4">
-            <a class="footer__list-item" href="#">Uber Technologies Inc.</a>
+            <span class="footer__list-item footer__list-item--span">&#169; 2017 Uber Technologies Inc.</span>
           </div>
           <div class="col col-xs-12 col-md-4 col-lg-4">
             <a class="footer__list-item" href="#">Privacy</a>
@@ -117,6 +240,12 @@
       </div>
     </div>
     </div>
+    <div class="arrow">
+      <svg class="icon-arrow">
+        <use xlink:href="#arrow"></use>
+      </svg>
+    </div>
+
   </footer>
   <script type="text/javascript" src="js/inject-sprite.js"></script>
 </body>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Uber Eats – Restaurant</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <!-- <div class="header__logo"> -->
+      <svg class="main-logo">
+        <use xlink:href="#logo"></use>
+      </svg>
+      <!-- </div> -->
+      <div class="header__destination">
+        <input class="main-input main-input--time" type="text" placeholder="ASAP">
+        <span class="main-input__span">to</span>
+        <input class="main-input main-input--location" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">
+      </div>
+      <div class="header__login">
+        <button class="header__btn header__btn--sign-in">Sign in</button>
+        <button class="header__btn header__btn--register">Register</button>
+        <svg class="icon-basket">
+          <use xlink:href="#basket"></use>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-intro">
+      <div class="container">
+        <div class="main-intro__header">
+          <span class="main-intro__name">Трактир «Пушкин»</span>
+          <div class="main-intro__wrapper">
+            <span class="main-intro__desc">₽₽₽ &#8226; Европейская</span>
+            <span class="main-intro__time">40 – 50 Min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--active">Закуски</li>
+          <li class="main-menu__item">Салаты</li>
+          <li class="main-menu__item">Супы</li>
+          <li class="main-menu__item">Горячие блюда</li>
+          <li class="main-menu__item">Гарниры</li>
+          <li class="main-menu__item">Десерты</li>
+        </ul>
+      </div>
+      <div class="main-list">
+        <span class="main-list__name">Закуски</span>
+        <div class="row">
+          <div class="col col-xs-12 col-md-12 col-lg-6">
+            <div class="main-list__item">
+              <div class="main-list__text">
+                <span class="main-list__text main-list__text--name">Сельдь на бородинском хлебе</span>
+                <span class="main-list__text main-list__text--desc">С яйцом и огурцом</span>
+                <span class="main-list__text main-list__text--price">240 ₽</span>
+              </div>
+              <img src="http://via.placeholder.com/102x102">
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-12 col-lg-6">
+            <div class="main-list__item">
+              <div class="main-list__text">
+                <span>Соленья ассорти</span>
+                <span></span>
+                <span>320 ₽</span>
+              </div>
+              <img src="http://via.placeholder.com/102x102">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-xs-12 col-md-12 col-lg-6">
+            <div class="main-list__item">
+              <div class="main-list__text">
+                <span>Грибы маринованные</span>
+                <span></span>
+                <span>300 ₽</span>
+              </div>
+              <img src="http://via.placeholder.com/102x102">
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-12 col-lg-6">
+            <div class="main-list__item">
+              <div class="main-list__text">
+                <span>Сало домашнее с горчицей</span>
+                <span></span>
+                <span>320 ₽</span>
+              </div>
+              <img src="http://via.placeholder.com/102x102">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-xs-12 col-md-12 col-lg-6">
+            <div class="main-list__item">
+              <div class="main-list__text">
+                <span>Малосольная семга</span>
+                <span></span>
+                <span>390 ₽</span>
+              </div>
+              <img src="http://via.placeholder.com/102x102">
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-12 col-lg-6">
+            <div class="main-list__item">
+              <div class="main-list__text">
+                <span>Язык говяжий с хреном</span>
+                <span></span>
+                <span>350 ₽</span>
+              </div>
+              <img src="http://via.placeholder.com/102x102">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <svg class="white-logo">
+            <use xlink:href="#white-logo"></use>
+          </svg>
+      </div>
+      <div class="footer__info">
+        <div class="row">
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <div class="footer__language">
+              <select class="footer__language-select">
+                  <option>English</option>
+                  <option>Русский</option>
+                </select>
+            </div>
+            <div class="footer__social">
+              <span class="footer__hashtag footer__hashtag--green">#</span><span class="footer__hashtag">UberEats</span>
+              <div class="footer__social-icons">
+                <a href="#" class="footer__social-icons-item">
+                  <svg class="icon-facebook">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-icons-item">
+                  <svg class="icon-twitter">
+                      <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-icons-item">
+                  <svg class="icon-instagram">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <ul class="footer__list">
+              <li>
+                <a class="footer__list-item" href="#" href="#">About UberEats</a>
+              </li>
+              <li>
+                <a class="footer__list-item" href="#">Become a Delivery Partner</a>
+              </li>
+              <li>
+                <a class="footer__list-item" href="#">Become a Restaurant Partner</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <ul class="footer__list">
+              <li>
+                <a class="footer__list-item" href="#">See all cities</a>
+              </li>
+              <li>
+                <a class="footer__list-item" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="footer__list-item" href="#">Help</a>
+              </li>
+              <li>
+                <a class="footer__list-item" href="#">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__app">
+        <button class="footer__btn footer__btn--ios"></button>
+        <button class="footer__btn footer__btn--android"></button>
+      </div>
+      <div class="footer__copyright">
+        <div class="row">
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <span class="footer__list-item footer__list-item--span">&#169; 2017 Uber Technologies Inc.</span>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <a class="footer__list-item" href="#">Privacy</a>
+          </div>
+          <div class="col col-xs-12 col-md-4 col-lg-4">
+            <a class="footer__list-item" href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/inject-sprite.js"></script>
+</body>
+
+</html>
