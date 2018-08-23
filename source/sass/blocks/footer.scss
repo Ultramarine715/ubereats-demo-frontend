@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  outline: 1px solid lightblue;
+  padding: 0 8px;
   background-color: #262626;
   min-height: 50px;
   color: #fff;
@@ -38,35 +38,21 @@
       }
     }
   }
-  &__language {
-    background-color: #3B3B3B;
-    width: 173px;
-    height: 40px;
-    overflow: hidden;
-    margin-bottom: 33px;
-    @include tablet {
-      width: 176px;
-    }
-    @include desktop {
-      width: 227px;
-    }
-  }
   &__language-select {
     appearance: none;
-    width: 203px;
+    width: 176px;
     height: 40px;
     padding: 0 20px 0 40px;
-    background-color: transparent;
-    background: url(../../img/world.svg) no-repeat 16px 11px, url(../../img/select-arrow.svg) no-repeat 84% 16px;
+    margin-bottom: 33px;
+    background: url(../../img/world.svg) no-repeat 16px 11px, url(../../img/select-arrow.svg) no-repeat 94% 16px;
+    background-color: #3B3B3B;
     border: none;
+    border-radius: 2px;
     text-transform: uppercase;
     color: #fff;
     line-height: 15px;
-    @include tablet {
-      width: 206px;
-    }
     @include desktop {
-      width: 257px;
+      width: 227px;
     }
   }
   &__hashtag {
@@ -91,9 +77,15 @@
   }
   &__btn {
     border: none;
-    margin: 0 20px;
+    margin-right: 20px;
     height: 40px;
     cursor: pointer;
+    @include tablet {
+      margin-right: 40px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
     &--ios {
       width: 120px;
       background: url(../../img/download-ios.png) no-repeat 0 0;

@@ -8,6 +8,29 @@
   @include desktop {
     max-width: 956px;
   }
+  &--rest {
+    border-top: 1px solid transparent;
+    height: 100%;
+    // background-image: url(../img/rest-back_mob.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // @include retina {
+    //   background-image: url(../img/rest-back_mob@2x.jpg);
+    // }
+    // @include tablet {
+    //   background-image: url(../img/rest-back_tab.jpg);
+    //   @include retina {
+    //     background-image: url(../img/rest-back_tab@2x.jpg);
+    //   }
+    // }
+    // @include desktop {
+    //   width: 1124px;
+    //   background-image: url(../img/rest-back_desk.jpg);
+    //   @include retina {
+    //     background-image: url(../img/rest-back_desk@2x.jpg);
+    //   }
+    // }
+  }
 }
 
 .row {
