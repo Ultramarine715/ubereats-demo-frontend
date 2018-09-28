@@ -1,0 +1,20 @@
+.main-input {
+  background-color: transparent;
+  line-height: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 7px 11px;
+  flex-grow: 2;
+  &--time {
+    max-width: 41px;
+  }
+  &--location {
+    @include tablet {
+      min-width: 215px;
+    }
+  }
+  &__span {
+    margin: 0 4px;
+    color: #626262;
+  }
+}

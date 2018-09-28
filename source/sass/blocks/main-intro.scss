@@ -1,0 +1,83 @@
+.main-intro {
+  height: 256px;
+  margin: 0 auto 110px;
+  @include tablet {
+    height: 364px;
+    margin-bottom: 0;
+  }
+  background-image: url(../img/rest-back_mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina {
+    background-image: url(../img/rest-back_mob@2x.jpg);
+  }
+  @include tablet {
+    background-image: url(../img/rest-back_tab.jpg);
+    @include retina {
+      background-image: url(../img/rest-back_tab@2x.jpg);
+    }
+  }
+  @include desktop {
+    width: 1124px;
+    background-image: url(../img/rest-back_desk.jpg);
+    @include retina {
+      background-image: url(../img/rest-back_desk@2x.jpg);
+    }
+  }
+  &__header {
+    width: 308px;
+    box-sizing: border-box;
+    margin: 131px auto 0;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0 0 40px #DCDCDC;
+    border-radius: 2px;
+    @include tablet {
+      width: 432px;
+      padding: 38px;
+      margin: 80px 0 80px 8px;
+    }
+    @include desktop {
+      width: 389px;
+      margin: 80px 0 80px;
+    }
+  }
+  &__name {
+    display: inline-block;
+    color: #1D1D1D;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 54px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__desc {
+    color: #626262;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+  &__time {
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    border-radius: 25px;
+  }
+}

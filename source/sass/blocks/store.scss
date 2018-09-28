@@ -1,0 +1,26 @@
+.store {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  &__image {
+    margin-bottom: 16px;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    @include tablet {
+      max-width: 368px;
+    }
+    @include desktop {
+      max-width: 308px;
+    }
+  }
+  &__name,
+  &__description,
+  &__delivery-time {
+    margin-bottom: 4px;
+  }
+  &__description {
+    color: #626262;
+  }
+}

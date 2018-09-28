@@ -1,0 +1,143 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  background-color: #262626;
+  min-height: 50px;
+  color: #fff;
+  line-height: 16px;
+
+  &__logo,
+  &__info,
+  &__app,
+  &__copyright {
+    // outline: 1px solid green;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .4)
+  }
+  &__logo {
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    padding: 39px 0 25px;
+  }
+  &__list-item {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 23px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &--span {
+      cursor: default;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__language-select {
+    appearance: none;
+    width: 176px;
+    height: 40px;
+    padding: 0 20px 0 40px;
+    margin-bottom: 33px;
+    background: url(../../img/world.svg) no-repeat 16px 11px, url(../../img/select-arrow.svg) no-repeat 94% 16px;
+    background-color: #3B3B3B;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 15px;
+    @include desktop {
+      width: 227px;
+    }
+  }
+  &__hashtag {
+    font-size: 16px;
+    line-height: 19px;
+    &--green {
+      color: #49A144;
+    }
+  }
+  &__social-icons {
+    margin: 20px 0 30px;
+  }
+  &__social-icons-item {
+    font-size: 0;
+    padding-right: 12px;
+  }
+  &__app {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btn {
+    border: none;
+    margin-right: 20px;
+    height: 40px;
+    cursor: pointer;
+    @include tablet {
+      margin-right: 40px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &--ios {
+      width: 120px;
+      background: url(../../img/download-ios.png) no-repeat 0 0;
+      background-size: cover;
+    }
+    &--android {
+      width: 136px;
+      background: url(../../img/download-andr.png) no-repeat 0 0;
+      background-size: cover;
+    }
+  }
+  &__copyright {
+    padding: 40px 0;
+    border: none;
+  }
+}
+
+.icon-instagram,
+.icon-facebook,
+.icon-twitter {
+  width: 24px;
+  height: 24px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+  background-color: #59BD5A;
+}
+
+.icon-arrow {
+  position: absolute;
+  top: 27px;
+  right: 32px;
+  width: 16px;
+  height: 26px;
+}
+
+.white-logo {
+  width: 192px;
+  height: 20px;
+}
+
+.main-logo {
+  width: 107px;
+  height: 11px;
+  @include desktop {
+    width: 121px;
+    height: 13px;
+  }
+}

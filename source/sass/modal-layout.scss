@@ -1,0 +1,155 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 956px;
+  }
+  &--rest {
+    border-top: 1px solid transparent;
+    height: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 16px;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.col-xs-1 {
+  flex-basis: 8.3333%;
+}
+
+.col-xs-2 {
+  flex-basis: 16.6666%;
+}
+
+.col-xs-3 {
+  flex-basis: 24.9999%;
+}
+
+.col-xs-4 {
+  flex-basis: 33.3333%;
+}
+
+.col-xs-5 {
+  flex-basis: 41.6665%;
+}
+
+.col-xs-6 {
+  flex-basis: 49.9998%;
+}
+
+.col-xs-7 {
+  flex-basis: 58.3331%;
+}
+
+.col-xs-8 {
+  flex-basis: 66.6664%;
+}
+
+.col-xs-9 {
+  flex-basis: 74.9997%;
+}
+
+.col-xs-10 {
+  flex-basis: 83.3333%;
+}
+
+.col-xs-11 {
+  flex-basis: 91.6663%;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+}
+
+@include tablet {
+  .col-md-1 {
+    flex-basis: 8.3333%;
+  }
+  .col-md-2 {
+    flex-basis: 16.6666%;
+  }
+  .col-md-3 {
+    flex-basis: 24.9999%;
+  }
+  .col-md-4 {
+    flex-basis: 33.3333%;
+  }
+  .col-md-5 {
+    flex-basis: 41.6665%;
+  }
+  .col-md-6 {
+    flex-basis: 49.9998%;
+  }
+  .col-md-7 {
+    flex-basis: 58.3331%;
+  }
+  .col-md-8 {
+    flex-basis: 66.6664%;
+  }
+  .col-md-9 {
+    flex-basis: 74.9997%;
+  }
+  .col-md-10 {
+    flex-basis: 83.3333%;
+  }
+  .col-md-11 {
+    flex-basis: 91.6663%;
+  }
+  .col-md-12 {
+    flex-basis: 100%;
+  }
+}
+
+@include desktop {
+  .col-lg-1 {
+    flex-basis: 8.3333%;
+  }
+  .col-lg-2 {
+    flex-basis: 16.6666%;
+  }
+  .col-lg-3 {
+    flex-basis: 24.9999%;
+  }
+  .col-lg-4 {
+    flex-basis: 33.3333%;
+  }
+  .col-lg-5 {
+    flex-basis: 41.6665%;
+  }
+  .col-lg-6 {
+    flex-basis: 49.9998%;
+  }
+  .col-lg-7 {
+    flex-basis: 58.3331%;
+  }
+  .col-lg-8 {
+    flex-basis: 66.6664%;
+  }
+  .col-lg-9 {
+    flex-basis: 74.9997%;
+  }
+  .col-lg-10 {
+    flex-basis: 83.3333%;
+  }
+  .col-lg-11 {
+    flex-basis: 91.6663%;
+  }
+  .col-lg-12 {
+    flex-basis: 100%;
+  }
+}
