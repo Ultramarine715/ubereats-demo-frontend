@@ -251,7 +251,7 @@ button {
     content: "";
     width: 22px;
     height: 22px;
-    background: url(../../img/search.svg) no-repeat; }
+    background: url(../img/search.svg) no-repeat; }
 
 .main__destination {
   display: -webkit-box;
@@ -334,7 +334,7 @@ button {
     height: 40px;
     padding: 0 20px 0 40px;
     margin-bottom: 33px;
-    background: url(../../img/world.svg) no-repeat 16px 11px, url(../../img/select-arrow.svg) no-repeat 94% 16px;
+    background: url(../img/world.svg) no-repeat 16px 11px, url(../img/select-arrow.svg) no-repeat 94% 16px;
     background-color: #3B3B3B;
     border: none;
     border-radius: 2px;
@@ -377,11 +377,11 @@ button {
       margin-right: 0; }
     .footer__btn--ios {
       width: 120px;
-      background: url(../../img/download-ios.png) no-repeat 0 0;
+      background: url(../img/download-ios.png) no-repeat 0 0;
       background-size: cover; }
     .footer__btn--android {
       width: 136px;
-      background: url(../../img/download-andr.png) no-repeat 0 0;
+      background: url(../img/download-andr.png) no-repeat 0 0;
       background-size: cover; }
   .footer__copyright {
     padding: 40px 0;
