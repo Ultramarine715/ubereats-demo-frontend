@@ -36,6 +36,18 @@
   background-color: transparent;
 }
 
+.main {
+  padding: 0 5px;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.main-content {
+  overflow: hidden;
+}
+
 .main-content__header {
   display: inline-block;
   margin-bottom: 16px;

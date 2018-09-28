@@ -9,7 +9,9 @@
     max-width: 41px;
   }
   &--location {
-    min-width: 215px;
+    @include tablet {
+      min-width: 215px;
+    }
   }
   &__span {
     margin: 0 4px;

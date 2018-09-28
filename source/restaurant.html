@@ -13,11 +13,11 @@
 <body>
   <header class="header">
     <div class="container header__wrap">
-      <!-- <div class="header__logo"> -->
-      <svg class="main-logo">
-        <use xlink:href="#logo"></use>
-      </svg>
-      <!-- </div> -->
+      <a href="/index.html">
+        <svg class="main-logo">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
       <div class="header__destination">
         <input class="main-input main-input--time" type="text" placeholder="ASAP">
         <span class="main-input__span">to</span>
@@ -252,8 +252,16 @@
       </div>
     </div>
     </div>
+    <div data-scroll  class="arrow button-to-top">
+      <svg class="icon-arrow">
+        <use xlink:href="#arrow"></use>
+      </svg>
+    </div>
+
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/inject-sprite.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
